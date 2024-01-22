@@ -39,3 +39,11 @@ This is a simple music player application with a clean and intuitive user interf
 
    ```bash
    git clone https://github.com/your-username/music-player.git
+
+2. Open the index.html file in your web browser.
+
+3. Use the player controls to manage songs, play/pause, reset, and add new songs.
+
+4. Click on "Play All" to start playing the playlist from the beginning.
+
+5. Utilize the search bar to filter songs by artist name.
