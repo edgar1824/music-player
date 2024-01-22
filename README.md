@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a simple music player application with a clean and intuitive user interface, developed using HTML, CSS, and JavaScript. The player allows users to manage a list of songs, play and pause songs, reset the player, and add new songs to the playlist.
+This is a simple music player application, developed using React.js. The player allows users to manage a list of songs, play and pause songs, reset the song, and add new songs to the playlist.
 
 ## Features
 
