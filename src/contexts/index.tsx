@@ -20,6 +20,7 @@ export const useAppContext = () => useContext(Context);
 
 export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
   const [songs, setSongs] = useState<ISong[]>([]);
+  const [queue, setQueue] = useState<ISong[]>([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -57,6 +58,15 @@ export const AppProvider: FC<PropsWithChildren> = ({ children }) => {
             : false,
       }))
     );
+    if (type === "play") {
+      songs
+        .find((s) => s.trackNumber === trackNumber)
+        ?.audio.addEventListener("ended", () => {
+          resetSong(trackNumber);
+          if (songs.find(() => trackNumber + 1))
+            togglePlaying(trackNumber + 1, "play");
+        });
+    }
   };
   const resetSong = (trackNumber: number) => {
     const isPlaying = songs.find(

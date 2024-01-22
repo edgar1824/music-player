@@ -21,7 +21,6 @@ export const SongList: FC = () => {
             <th colSpan={1} className="px-2 py-3">
               Track
             </th>
-            <th colSpan={1} className="px-2 py-3"></th>
           </tr>
         </thead>
         <tbody>
